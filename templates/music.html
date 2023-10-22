@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best musics for your viral video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/site.css">
+    
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-section">
+            <span class="title-smol">Best</span>
+            <span class="title-large">Musics</span>
+            <span class="title-small">for your Viral Video</span>
+        </div>
+        <form method="POST" action="/music">
+            <div class="form-group">
+                <label for="video-description">Video description:</label>
+                <input type="text" id="video-description" name="video_description" placeholder="" value="{{ user_input }}">
+            </div>
+            <div class="form-group">
+                <label for="hashtags">Hashtags:</label>
+                <input type="text" id="hashtags" name="hashtags" placeholder="" value="{{ hashtags }}">
+            </div>
+            
+            <div class="form-group-buttons">
+                <button class="submit-button" type="submit" name="action" value="submit">Submit</button>
+                <button class="clear-button" type="submit" name="action" value="clear">Clear</button>
+            </div>
+        </form>
+        <div class="output-container">
+            {% if result != None %}
+                {% for r in result %}
+                    <div class="output-box">
+                        {{ r }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <p>How the site works?</p>
+          <ul>
+            <li>You have to describe your video as detailed as possible in the "Video description" box</li>
+            <li>Then, you type the hashtags your video will receive in the "Hashtags" box</li>
+            <li>Click submit and we will recommend some musics for your video!</li>
+          </ul>
+        </div>
+    </div>
+  
+    <button class="question-button">?</button>
+</body>
+<script src="static/modal.js"></script>
+</html>

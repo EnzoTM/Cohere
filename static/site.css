@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    background-image: url('background1.png'); /* Relative path to the background image */
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust as needed */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    height: 1000px;
+    color: #9a93e1;
+    border-radius: 15px;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title-smol {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: rgba(194, 182, 236, 0.6);
+    font-size: 40px;
+}
+
+.title-small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: rgba(194, 182, 236, 0.6);
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.title-large {
+    font-family: 'Montserrat';
+    font-style: bold;
+    color: rgba(194, 182, 236, 0.6);
+    font-size: 90px;
+    margin: 0px;
+    margin-top: -15px;
+}
+
+
+input[type="text"] {
+    background-color: rgba(126, 109, 185, 0.2); /* 80% opacity */
+    color: rgba(194, 182, 236, 0.7);
+    border: none;
+    padding: 10px;
+    margin: 15px 0;
+    width: 600px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    color: rgba(194, 182, 236, 0.6);
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+label {
+    font-size: 1.2em;
+    color: rgba(194, 182, 236, 0.6);
+}
+
+::placeholder {
+    color: rgba(194, 182, 236, 0.6);
+    opacity: 1;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.question-button {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    background-color: rgba(126, 109, 185, 0.2);
+    border-radius: 40%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(194, 182, 236, 0.6);
+    font-size: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.question-button:hover {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    background-color: rgba(112, 97, 160, 0.2);
+    border-radius: 40%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(206, 197, 238, 0.6);
+    font-size: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.question-button:active {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    background-color: rgba(126, 109, 185, 0.2);
+    border-radius: 40%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(194, 182, 236, 0.6);
+    font-size: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align label and input on the left */
+    margin-bottom: 15px; /* Adjust as needed for spacing */
+}
+
+/* Add this CSS to style the labels */
+.form-group label {
+    font-size: 1.2em;
+    color: rgba(194, 182, 236, 0.6);
+    margin-bottom: 5px; /* Add space between label and input */
+}
+
+/* Add this CSS to style the input fields */
+.form-group input[type="text"] {
+    background-color: rgba(126, 109, 185, 0.2);
+    color: rgba(194, 182, 236, 0.7);
+    border: none;
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 610px; /* Match the width of input fields */
+}
+/* Adjust the form-group to accommodate the buttons */
+.form-group-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 620px; /* This matches the width of your input fields */
+    margin-top: 15px;
+}
+
+/* Style the clear button similar to the submit button */
+.clear-button, .submit-button {
+    width: 49%; /* Half of the container minus a small gap for spacing */
+    background-color: rgba(63, 52, 97, 0.7);
+    color: rgba(205, 195, 240, 0.9);
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.clear-button:hover, .submit-button:hover {
+    background-color: rgba(61, 51, 95, 0.8);
+    color: rgba(206, 197, 238, 0.6);
+}
+
+.clear-button:active, .submit-button:active {
+    background-color: rgba(45, 36, 75, 0.8);
+    color: rgba(205, 195, 240, 0.8);
+}
+/* Add this CSS to style the output container */
+.output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align output boxes on the left */
+    margin-top: 20px; /* Adjust as needed for spacing */
+}
+
+/* Add this CSS to style the output box */
+.output-box {
+    background-color: rgba(45, 36, 75, 0.7);
+    color: rgba(194, 182, 236);
+    border: none;
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px; /* Add space between output boxes */
+}
+
+/* Add this CSS to style the output label */
+.output-box label {
+    font-size: 1.2em;
+    color: rgba(194, 182, 236, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a text shadow */
+    margin-bottom: 5px; /* Add space between label and textarea */
+}
+
+/* Add this CSS to style the output textarea */
+.output-box textarea {
+    background-color: rgba(45, 36, 75, 0.8);
+    color: rgba(194, 182, 236);
+    border: none;
+    padding: 10px;
+    width: 100%; /* Set the width to 100% to fill the container */
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    resize: none; /* Prevent textarea resizing */
+    overflow-y: auto; /* Add vertical scroll if content exceeds the height */
+}
+/* CSS for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 85%;
+    top: 30%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: rgb(22, 15, 46, 0.8);
+    margin: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    color: rgba(194, 182, 236, 0.5);
+    max-width: 100%; /* Set a maximum width for the modal content */
+  
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(194, 182, 236, 0.5);
+    cursor: pointer;
+}
