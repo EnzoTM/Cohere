@@ -11,7 +11,7 @@ def likes_para_categorico(likes:int)-> str: #transforma a coluna de likes em uma
     else:
         return "viral"
      
-df = pd.read_csv("dados_tratados1.csv") #ler dataset
+df = pd.read_csv("pipeline_e_datasets/dados_tratados1.csv") #ler dataset
 
 Y_label = df['like_count']
 Y_label = Y_label.apply(likes_para_categorico) #label com os dados corretos
