@@ -11,3 +11,12 @@ Utiliza os embeddings do Cohere e um modelo ML de SVM (suport vector machine) pa
 
 ## Data Pipeline
 Para alimentar os modelos é utilizado uma API de web_scrapping para extrair conteudos dos posts do tik-tok, esse conteúdo é processado em um dataframe (arquivo .csv) apenas com features e labels utéis para os modelos. Esse pipeline é capaz de automaticamente extrair e processar grandes quantidades de dados para treinar os modelos
+
+## Participantes
+<ul>
+  <li>Caue Paiva Lira: https://github.com/caue-paiva</li>
+  <li>Enzo Tonon Morente: https://github.com/EnzoTM</li>
+  <li>João Pedro Alves Notari Godoy: https://github.com/joaopgodoy</li>
+  <li>Letícia Barbosa Neves: https://github.com/LeticiaBN</li>
+  <li>Ayrton da Costa Ganem Filho: https://github.com/A1RT0N </li>
+</ul>
